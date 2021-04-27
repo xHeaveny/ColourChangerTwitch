@@ -5,7 +5,7 @@
 1. Download [Python 3.9.4](https://www.python.org/downloads/)
 2. Download the `colorchanger.py` file
 3. Change the settings in the `colorchanger.py` file (twitchName and twitchOAuthToken must be changed; other settings are optional)
-4. Run the `colorchanger.py` file on your PC by leftclicking it two times
+4. Run the `colorchanger.py` file on your PC by clicking it two times
 5. Done
 
 # Support
