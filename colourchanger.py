@@ -8,7 +8,7 @@ import colorsys
 # These things are the only things you need to change!
 premium = "true"  # keep this set to "true" if you have Twitch Prime or Twitch Turbo. If you don't have either of them, set it to "false"
 brightColoursOnly = "true" # If you set this to "true", the script will only generate bright colours. Set this to "false" if you want random colours that include more dark ones
-customColours = [ ] # put custom colours here if you don't want random colours; use the following format: ['#111111', '#FF00FF', '#2F2B2A', '#B3F9FF', '#484766']; Put nothing in between the [ ] if you want random colors!; custom colors will override the brightColorsOnly setting!
+customColours = [ ] # put custom colours here if you don't want random colours; use the following format: ['#111111', '#FF00FF', '#2F2B2A', '#B3F9FF', '#484766']; Put nothing in between the [ ] if you want random colours!; custom colours will override the brightColoursOnly setting!
 colourChangeMin = 4200  # minimum time between every colour change (in milliseconds); don't set this too low!
 colourChangeMax = 18700  # maximum time between every colour change (in milliseconds)
 twitchName = "xheaveny_"  # your Twitch name
@@ -18,7 +18,7 @@ twitchOAuthToken = "oauth:..."  # your OAuth token; don't remove the PASS at the
 print('Starting the script...')
 
 sockt = socket()
-regularColours = "Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerBlue", "Firebrick", "GoldenRod", "Green", "HotPink", "OrangeRed", "Red", "SeaGreen", "SpringGreen", "YellowGreen"  # colors that are available for everyone, sorted alphabetically
+regularColours = "Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerBlue", "Firebrick", "GoldenRod", "Green", "HotPink", "OrangeRed", "Red", "SeaGreen", "SpringGreen", "YellowGreen"  # colours that are available for everyone, sorted alphabetically
 
 def sendRequest(data):
     sockt.send(bytes(data + '\r\n', 'utf-8'))  # sends a request to Twitch's irc server using the UTF-8 standard
